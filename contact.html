@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Contact | Moe's Bedfordview Grill @ The Fat Mermaid</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header – exactly as on Moe's main page (with @THE FAT MERMAID) -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="Moe's_bedfordview_grill.html" class="logo">
+                    <div class="logo-wrapper">
+                        <div class="logo-image">
+                            <img src="logo.png" alt="Moe's Grill Logo" class="logo-img">
+                        </div>
+                        <div class="logo-text-container">
+                            <span class="logo-main">MOE'S BEDFORDVIEW GRILL</span>
+                            <span class="logo-sub">@THE FAT MERMAID</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="Moe's_bedfordview_grill.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="Moe's_bedfordview_grill.html#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">The Fat Mermaid</a></li>
+                        <li class="nav-item"><a href="little_mykonos.html" class="nav-link">Little Mykonos</a></li>
+                        
+                        <!-- Book Now button links to booking form on this page -->
+                        <li class="nav-item"><a href="#booking-form" class="nav-link book-btn">Contact us</a></li>
+                    </ul>
+                    
+                    <div class="hamburger">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero (same style as Events page) -->
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('inside.jpg');"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="page-tagline">RESERVE YOUR EXPERIENCE</div>
+                <h1 class="page-title">Book Your Table</h1>
+                <p class="page-subtitle">Secure your spot at Moe's. Whether it's an intimate dinner or a lively celebration, we're ready for you.</p>
+                <div class="hero-buttons">
+                    <a href="#booking-form" class="btn btn-primary">Book Now <i class="fas fa-calendar-alt"></i></a>
+                    <a href="menu.html" class="btn btn-outline">View Menu <i class="fas fa-book-open"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING FORM & MAP SECTION (white background, event‑card style) -->
+    <section id="booking-form" class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">RESERVATIONS</div>
+                <h2 class="section-title">Make a Booking</h2>
+                <p class="section-subtitle">Fill out the form and we'll confirm within 2 hours.</p>
+            </div>
+
+            <!-- two‑column grid – form and map side by side -->
+            <div class="booking-grid">
+                <!-- Booking form card -->
+                <div class="event-card">
+                    <div class="event-content booking-card-content">
+                        <h3 class="booking-card-title">Your details</h3>
+                        <form id="bookingForm" action="#" method="post" class="booking-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" placeholder="Full name *" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" placeholder="Email *" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="tel" name="phone" id="phone" placeholder="Phone *" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="guests" id="guests" placeholder="Guests *" min="1" max="20" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="date" name="date" id="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="time" name="time" id="time" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="special" id="special" rows="3" placeholder="Special requests (allergies, occasion...)"></textarea>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" name="consent" id="consent" required>
+                                <label for="consent">I agree to the <a href="#" class="privacy-link">privacy policy</a>.</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Request Booking</button>
+                        </form>
+                        <!-- Thank you message (hidden initially) -->
+                        <div id="thankYouMessage" class="thank-you-message">
+                            <i class="fas fa-check-circle"></i> Thank you! We'll confirm your booking within 2 hours.
+                        </div>
+                        <p class="form-footnote"><i class="fas fa-clock" style="color:var(--primary);"></i> We reply within 2 hours</p>
+                    </div>
+                </div>
+
+                <!-- Map card -->
+                <div class="event-card">
+                    <div class="event-content booking-card-content">
+                        <h3 class="booking-card-title">Find us</h3>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.091992857651!2d28.12728731502966!3d-26.177584983450783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1f2b2b2b2b%3A0x2b2b2b2b2b2b2b2b!2s4%20Jasmine%20St%2C%20Bedfordview%2C%20Johannesburg%2C%202007!5e0!3m2!1sen!2sza!4v1620000000000!5m2!1sen!2sza" 
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <p class="map-note"><i class="fas fa-car"></i> Free parking on site</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT INFO CARDS (dark background) -->
+    <section class="private-events">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">CONNECT</div>
+                <h2 class="section-title">Contact Information</h2>
+                <p class="section-subtitle">Reach out any time – we're here to help.</p>
+            </div>
+            <div class="contact-cards-grid">
+                <!-- Card 1: Visit Us -->
+                <div class="event-card contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>4 Jasmine, Bedfordview<br>Johannesburg, 2008</p>
+                    <a href="https://maps.google.com/?q=4+Jasmine+Bedfordview" target="_blank" class="btn-event">Get Directions <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Card 2: Call Us -->
+                <div class="event-card contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>(011) 555-1234</p>
+                    <p class="contact-small">Mon–Sun: 08:00 – late</p>
+                    <a href="tel:+27115551234" class="btn-event">Call Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Card 3: Email Us -->
+                <div class="event-card contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>info@moesgrill.co.za</p>
+                    <p class="contact-small">We reply within 24h</p>
+                    <a href="mailto:info@moesgrill.co.za" class="btn-event">Send Email <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Card 4: Opening Hours -->
+                <div class="event-card contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Opening Hours</h3>
+                    <p>Mon–Wed: 08:00–18:00<br>Thu–Sat: 08:00–21:00<br>Sun: 08:00–18:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION (white background) -->
+    <section class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">QUESTIONS?</div>
+                <h2 class="section-title">Frequently Asked</h2>
+                <p class="section-subtitle">Quick answers about bookings.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="event-card faq-card">
+                    <h3>How far in advance can I book?</h3>
+                    <p>We accept reservations up to 3 months in advance. For large groups, please contact us directly.</p>
+                </div>
+                <div class="event-card faq-card">
+                    <h3>What if I'm running late?</h3>
+                    <p>Please call us – we'll hold your table for 15 minutes past the reserved time.</p>
+                </div>
+                <div class="event-card faq-card">
+                    <h3>Can I modify or cancel?</h3>
+                    <p>Yes, reply to your confirmation email or call at least 2 hours before.</p>
+                </div>
+                <div class="event-card faq-card">
+                    <h3>Dietary restrictions?</h3>
+                    <p>Absolutely – mention them in the special requests box when booking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION (with slider, same as Events page) -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('joy.jpg');"></div>
+            <div class="cta-slide" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('inside.jpg');"></div>
+            <div class="cta-slide" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('food.jpg');"></div>
+        </div>
+        <div class="container">
+            <h2 class="cta-title">Ready for a great time?</h2>
+            <p class="cta-text">Book your table now and enjoy the best grill in town.</p>
+            <div class="cta-buttons">
+                <a href="#booking-form" class="btn btn-primary">Book a Table</a>
+                <a href="menu.html" class="btn btn-outline">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer – exactly as on Moe's main page (with @THE FAT MERMAID) -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-wrapper">
+                            <div class="logo-image">
+                                <img src="logo.png" alt="Moe's Grill Logo" class="logo-img">
+                            </div>
+                            <div class="logo-text-container">
+                                <span class="logo-main">MOE'S BEDFORDVIEW GRILL</span>
+                                <span class="logo-sub">@THE FAT MERMAID</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        A modern urban grill and bar offering an unforgettable dining experience in Bedfordview.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="Moe's_bedfordview_grill.html">Home</a></li>
+                        <li><a href="Moe's_bedfordview_grill.html#about">Our Story</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="index.html">The Fat Mermaid</a></li>
+                        <li><a href="little_mykonos.html">Little Mykonos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Opening Hours</h3>
+                    <ul class="footer-hours">
+                        <li><span>Monday - Wednesday</span><span>08:00 - 18:00</span></li>
+                        <li><span>Thursday - Saturday</span><span>08:00 - 21:00</span></li>
+                        <li><span>Sunday</span><span>08:00 - 18:00</span></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">4 Jasmine, Bedfordview, Johannesburg</div>
+                        <div class="contact-item">(011) 555-1234</div>
+                        <div class="contact-item">info@moesgrill.co.za</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moe's Bedfordview Grill @ The Fat Mermaid. All rights reserved. | Crafted with care for food lovers</p>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button (same as Events page, same number) -->
+    <a href="https://wa.me/27836087774" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll for anchor links (e.g., #booking-form)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // CTA slider (same as Events page)
+        const ctaSlides = document.querySelectorAll('.cta-slide');
+        let ctaCurrent = 0;
+        function showCtaSlide(index) {
+            ctaSlides.forEach(slide => slide.classList.remove('active'));
+            ctaSlides[index].classList.add('active');
+        }
+        function nextCtaSlide() {
+            ctaCurrent = (ctaCurrent + 1) % ctaSlides.length;
+            showCtaSlide(ctaCurrent);
+        }
+        if (ctaSlides.length > 1) setInterval(nextCtaSlide, 5000);
+
+        // Form submission with thank you message
+        const form = document.getElementById('bookingForm');
+        const thankYou = document.getElementById('thankYouMessage');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent actual submission
+            thankYou.style.display = 'block';
+            setTimeout(() => {
+                form.reset();
+                // Optionally hide after a few seconds
+                setTimeout(() => { thankYou.style.display = 'none'; }, 5000);
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

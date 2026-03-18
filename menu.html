@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Our Menu | Moe's Bedfordview Grill @ The Fat Mermaid</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header – EXACTLY as on Moe's main page (no space after @) -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="Moe's_bedfordview_grill.html" class="logo">
+                    <div class="logo-wrapper">
+                        <div class="logo-image">
+                            <img src="logo.png" alt="Moe's Grill Logo" class="logo-img">
+                        </div>
+                        <div class="logo-text-container">
+                            <span class="logo-main">MOE'S BEDFORDVIEW GRILL</span>
+                            <span class="logo-sub">@THE FAT MERMAID</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="Moe's_bedfordview_grill.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="Moe's_bedfordview_grill.html#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="menu.html" class="nav-link active">Menu</a></li>
+                        <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">The Fat Mermaid</a></li>
+                        <li class="nav-item"><a href="little_mykonos.html" class="nav-link">Little Mykonos</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link book-btn">Contact us</a></li>
+                    </ul>
+                    
+                    <div class="hamburger">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero with two buttons -->
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('inside.jpg');"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="page-tagline">FLAVORS THAT IGNITE</div>
+                <h1 class="page-title">Choose Your Experience</h1>
+                <p class="page-subtitle">Whether you’re here for a hearty meal or handcrafted drinks, we’ve got something special for you.</p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary">Book Now <i class="fas fa-calendar-alt"></i></a>
+                    <a href="#menu-selection" class="btn btn-outline">View Menus <i class="fas fa-arrow-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Selection Cards (id for scrolling) -->
+    <section id="menu-selection" class="menu-selection">
+        <div class="container">
+            <h2 class="section-title">What will you indulge in today?</h2>
+            <div class="selection-grid">
+                <!-- Food Menu Card -->
+                <div class="selection-card">
+                    <div class="card-image">
+                        <img src="pizza.jpg" alt="Food menu">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Food Menu</h3>
+                        <p>From sizzling burgers to wood‑fired pizzas – explore our kitchen’s finest.</p>
+                        <a href="food-menu.pdf" class="btn btn-primary" download>View Food Menu <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Drinks Menu Card -->
+                <div class="selection-card">
+                    <div class="card-image">
+                        <img src="COCKATAIL1.jpg" alt="Drinks menu">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Drinks Menu</h3>
+                        <p>Cocktails, craft beers, fine wines – raise a glass to the good times.</p>
+                        <a href="drinks-menu.pdf" class="btn btn-primary" download>View Drinks Menu <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section (simple, no floating card) -->
+    <section id="booking" class="booking-section">
+        <div class="booking-bg" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.7) 100%), url('joy.jpg');"></div>
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-header">
+                    <span class="booking-tagline">RESERVE YOUR TABLE</span>
+                    <h2 class="booking-title">Ready for an unforgettable evening?</h2>
+                    <p class="booking-description">Secure your spot in seconds. We’ll take care of the rest.</p>
+                </div>
+                <div class="booking-form">
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" placeholder="Date" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" placeholder="Time" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <select required>
+                                    <option value="" disabled selected>Number of guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6+">6+ Guests</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">Book Now</button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="form-note">We’ll send a confirmation to your email. No spam, ever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer – matching Moe's main page (no space after @) -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-wrapper">
+                            <div class="logo-image">
+                                <img src="logo.png" alt="Moe's Grill Logo" class="logo-img">
+                            </div>
+                            <div class="logo-text-container">
+                                <span class="logo-main">MOE'S BEDFORDVIEW GRILL</span>
+                                <span class="logo-sub">@THE FAT MERMAID</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        A modern urban grill and bar offering an unforgettable dining experience in Bedfordview.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="Moe's_bedfordview_grill.html">Home</a></li>
+                        <li><a href="Moe's_bedfordview_grill.html#about">Our Story</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="index.html">The Fat Mermaid</a></li>
+                        <li><a href="ilittle_mykonos.html">Little Mykonos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Opening Hours</h3>
+                    <ul class="footer-hours">
+                        <li><span>Monday - Wednesday</span><span>08:00 - 18:00</span></li>
+                        <li><span>Thursday - Saturday</span><span>08:00 - 21:00</span></li>
+                        <li><span>Sunday</span><span>08:00 - 18:00</span></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">4 Jasmine, Bedfordview, Johannesburg</div>
+                        <div class="contact-item">(011) 555-1234</div>
+                        <div class="contact-item">info@moesgrill.co.za</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moe's Bedfordview Grill @ The Fat Mermaid. All rights reserved. | Crafted with care for food lovers</p>
+               
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button (same as The Fat Mermaid) -->
+    <a href="https://wa.me/27836087774" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Mobile menu toggle script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>The Fat Mermaid · Mediterranean Hideaway in Bedfordview</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Icons and fonts (kept in HTML because they are external resources) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (fixed, deep blue background) -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-wrapper">
+                        <div class="logo-image">
+                            <!-- Replace with your own logo later -->
+                            <img src="mermaidlogo.avif" alt="The Fat Mermaid Logo" class="logo-img">
+                        </div>
+                        <div class="logo-text-container">
+                            <span class="logo-main">THE FAT MERMAID</span>
+                            <span class="logo-sub">Your Escape From Reality</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <!-- Link to existing Moes Grill subpage -->
+                        <li class="nav-item"><a href="Moe's_bedfordview_grill.html" class="nav-link">Moe's Bedfordview Grill</a></li>
+                        <li class="nav-item"><a href="little_mykonos.html" class="nav-link">Little Mykonos</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                        <!-- Reserve button (primary-light with primary-dark text) -->
+                        <li class="nav-item"><a href="#contact" class="nav-link book-btn">Reserve</a></li>
+                    </ul>
+                    
+                    <div class="hamburger">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Slider (Mediterranean scenes) -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('pool2.jpg');"></div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('pool4.jpg');"></div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('pool5.jpg');"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tagline">YOUR GREEK ESCAPE IN BEDFORDVIEW</div>
+                <h1 class="hero-title">
+                    <span class="title-line">WHERE THE</span>
+                    <span class="title-line"><span class="highlight">MEDITERRANEAN</span> MEETS</span>
+                    <span class="title-line">JOBURG</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    A hidden gem tucked away on a narrow street – beachy vibes, crystal pool, 
+                    delicious Greek-inspired food, and the new Mykonos hotel suites.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">
+                        <span>Discover</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="menu.html" class="btn btn-outline">
+                        <span>Moe's Menu</span>
+                        <i class="fas fa-utensils"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section – hidden gem, pool, food -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">THE HIDDEN GEM</div>
+                <h2 class="section-title">Welcome to The Fat Mermaid</h2>
+                <p class="section-subtitle">A beachy hideaway that transports you far from the city</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image-container">
+                    <div class="about-image-main">
+                        <div class="about-image">
+                            <img src="pool1.jpg" alt="Poolside at The Fat Mermaid" class="about-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3>A world away, right here</h3>
+                    <p>Nestled on a quiet narrow street in Bedfordview, The Fat Mermaid is an unexpected oasis. With its whitewashed walls, blue shutters and sparkling pool, you'll feel like you've stepped onto a Greek island – without leaving Joburg.</p>
+                    
+                    <div class="highlight-box">
+                        <p>"Reasonable prices, generous portions, and a vibe that keeps you coming back. The pool is pristine, the food is delicious, and the service is warm."</p>
+                        <div class="highlight-author">– Regular guest</div>
+                    </div>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-details">
+                                <h4><i class="fas fa-swimmer" style="color: var(--primary-dark); margin-right: 8px;"></i> Pool & Parties</h4>
+                                <p>Dip in our crystal-clear pool, then stay for live music and beach parties.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-details">
+                                <h4><i class="fas fa-utensils" style="color: var(--primary-dark); margin-right: 8px;"></i> Moe's Bedfordview Grill</h4>
+                                <p>Our in-house restaurant serving wood-fired pizzas, juicy burgers, and Greek specials.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-details">
+                                <h4><i class="fas fa-hotel" style="color: var(--primary-dark); margin-right: 8px;"></i>Little Mykonos</h4>
+                                <p>Brand new Cycladic-style suites – stay overnight and extend your escape.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards / Experiences (Moes Grill, Pool, The Mykonos) -->
+    <section id="mykonos" class="menu-preview">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">EXPERIENCES</div>
+                <h2 class="section-title">Your Mediterranean Escape</h2>
+                <p class="section-subtitle">Dine, swim, stay – all in one place</p>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Card 1: Moes Grill -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="pizza.jpg" alt="Moes Grill dishes" class="menu-img">
+                        <div class="menu-badge">EAT</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Moes Grill</h3>
+                        </div>
+                        <p>Our vibrant grill restaurant – think flame‑grilled meats, schawarma, and wood‑fired pizzas. Generous portions, bold flavours.</p>
+                        <div class="menu-tags">
+                            <span class="tag">Schawarma</span>
+                            <span class="tag">Burgers</span>
+                            <span class="tag">Pizza</span>
+                        </div>
+                        <a href="menu.html#menu" class="card-link">Explore menu →</a>
+                    </div>
+                </div>
+                
+                <!-- Card 2: Pool & Parties -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="pool.jpg" alt="Pool at The Fat Mermaid" class="menu-img">
+                        <div class="menu-badge">SWIM</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Pool Side</h3>
+                        </div>
+                        <p>Our crystal‑clear pool is the heart of summer. Lounge on deckchairs, sip cocktails, and pure relaxation.</p>
+                        <div class="menu-tags">
+                            <span class="tag">Day club</span>
+                            <span class="tag">Cocktails</span>
+                            <span class="tag">Live music</span>
+                        </div>
+                        <a href="#contact" class="card-link">Book today →</a>
+                    </div>
+                </div>
+                
+                <!-- Card 3: The Mykonos Hotel -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="hotel.jpg" alt="The Mykonos suites" class="menu-img">
+                        <div class="menu-badge">STAY</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Little Mykonos</h3>
+                        </div>
+                        <p>Our brand new hotel wing. Whitewashed suites with private balconies, overlooking the pool. The perfect overnight escape.</p>
+                        <div class="menu-tags">
+                            <span class="tag">Luxury</span>
+                            <span class="tag">Breakfast incl.</span>
+                            <span class="tag">Pool view</span>
+                        </div>
+                        <a href="#contact" class="card-link">Check availability →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section – now with Booking Form instead of Contact Info -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">FIND US</div>
+                <h2 class="section-title">Come Visit</h2>
+                <p class="section-subtitle">Tucked away on a narrow street – follow the scent of the sea</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Booking Form (replaces old contact info) -->
+                <div class="booking-form">
+                    <h3>Make a Reservation</h3>
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-row form-row-half">
+                            <input type="date" name="date" required>
+                        </div>
+                        <div class="form-row form-row-half">
+                            <input type="time" name="time" required>
+                        </div>
+                        <div class="form-row">
+                            <select name="guests" required>
+                                <option value="" disabled selected>Number of Guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6+ Guests</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <textarea name="message" placeholder="Special requests or notes" rows="4"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-primary btn-block">Request Booking</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Google Map -->
+                <div class="contact-map">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.8415235413977!2d28.151228200000002!3d-26.169290200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95122ec30a4203%3A0x3bc8639af8d2a0ef!2sThe%20Fat%20Mermaid%20%26%20Moe&#39;s%20bedfordview%20grill!5e0!3m2!1sen!2sza!4v1773327191303!5m2!1sen!2sza" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background Slider -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('pool5.jpg');"></div>
+            <div class="cta-slide" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('pool4.jpg');"></div>
+        </div>
+        <div class="container">
+            <h2 class="cta-title">Ready to Escape?</h2>
+            <p class="cta-text">Book a table at Moes Grill, reserve a pool day bed, or check into The Mykonos for the night.</p>
+            <div class="cta-buttons">
+                <a href="menu.html" class="btn btn-primary">Moes Grill Menu</a>
+                <a href="#contact" class="btn btn-outline">Reserve Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-wrapper">
+                            <div class="logo-image">
+                                <img src="mermaidlogo.avif" alt="The Fat Mermaid Logo" class="logo-img">
+                            </div>
+                            <div class="logo-text-container">
+                                <span class="logo-main">THE FAT MERMAID</span>
+                                <span class="logo-sub">Your Escape From Reality</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Your Mediterranean escape in Bedfordview – poolside dining, vibrant parties, and stylish hotel suites.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="Moe's_bedfordview_grill.html">Moe's Bedfordview Grill</a></li>
+                        <li><a href="little_mykonos.html">The Mykonos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Opening Hours</h3>
+                    <ul class="footer-hours">
+                        <li><span>Monday - Wednesday</span><span>08:00 - 18:00</span></li>
+                        <li><span>Thursday - Saturday</span><span>08:00 - 21:00</span></li>
+                        <li><span>Sunday</span><span>08:00 - 18:00</span></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">4 Jasmine, Bedfordview, Johannesburg</div>
+                        <div class="contact-item">(011) 555-1234</div>
+                        <div class="contact-item">info@moesgrill.co.za</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Fat Mermaid. All rights reserved.</p>
+               
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp button (fixed bottom right) -->
+    <a href="https://wa.me/27836087774" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript for sliders and mobile menu -->
+    <script>
+        // Hero Slider
+        const heroSlides = document.querySelectorAll('.hero-slide');
+        let heroCurrent = 0;
+        if (heroSlides.length > 1) {
+            setInterval(() => {
+                heroSlides.forEach(slide => slide.classList.remove('active'));
+                heroCurrent = (heroCurrent + 1) % heroSlides.length;
+                heroSlides[heroCurrent].classList.add('active');
+            }, 5000);
+        }
+
+        // CTA Slider
+        const ctaSlides = document.querySelectorAll('.cta-slide');
+        let ctaCurrent = 0;
+        if (ctaSlides.length > 1) {
+            setInterval(() => {
+                ctaSlides.forEach(slide => slide.classList.remove('active'));
+                ctaCurrent = (ctaCurrent + 1) % ctaSlides.length;
+                ctaSlides[ctaCurrent].classList.add('active');
+            }, 5000);
+        }
+
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

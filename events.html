@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Events | Moe's Bedfordview Grill @ The Fat Mermaid</title>
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header – EXACTLY as on Moe's main page (with no space after @) -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="Moe's_bedfordview_grill.html" class="logo">
+                    <div class="logo-wrapper">
+                        <div class="logo-image">
+                            <img src="logo.png" alt="Moe's Grill Logo" class="logo-img">
+                        </div>
+                        <div class="logo-text-container">
+                            <span class="logo-main">MOE'S BEDFORDVIEW GRILL</span>
+                            <span class="logo-sub">@THE FAT MERMAID</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="Moe's_bedfordview_grill.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="Moe's_bedfordview_grill.html#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="events.html" class="nav-link active">Events</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">The Fat Mermaid</a></li>
+                        <li class="nav-item"><a href="little_mykonos.html" class="nav-link">Little Mykonos</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link book-btn">Contact us</a></li>
+                    </ul>
+                    
+                    <div class="hamburger">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero for Events -->
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('inside.jpg');"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="page-tagline">JOIN THE CELEBRATION</div>
+                <h1 class="page-title">Events & Entertainment</h1>
+                <p class="page-subtitle">Live music, themed nights, and special occasions – there's always something happening at Moe's.</p>
+                <!-- Two hero buttons -->
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary">Book Now <i class="fas fa-calendar-alt"></i></a>
+                    <a href="#events-grid" class="btn btn-outline">View Events <i class="fas fa-arrow-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section (id for scrolling) -->
+    <section id="events-grid" class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">WHAT'S ON</div>
+                <h2 class="section-title">Upcoming Events</h2>
+                <p class="section-subtitle">Mark your calendar and join the fun</p>
+            </div>
+
+            <div class="events-grid">
+                <!-- Event 1: Live Jazz Night -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="jazz2.avif" alt="Live Jazz Night" class="event-img">
+                        <div class="event-date-badge">
+                            <span class="event-day">15</span>
+                            <span class="event-month">MAR</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Live Jazz Night</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 19:00 - 22:00</span>
+                            <span><i class="fas fa-microphone-alt"></i> The Smooth Trio</span>
+                        </div>
+                        <p class="event-description">Enjoy a relaxing evening with smooth jazz, fine wine, and our signature small plates. Free entry.</p>
+                        <div class="event-footer">
+                            <span class="event-tag">Music</span>
+                            <a href="#" class="btn-event">More Info <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2: Salsa & Tapas Thursday -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="salsa.avif" alt="Salsa & Tapas" class="event-img">
+                        <div class="event-date-badge">
+                            <span class="event-day">20</span>
+                            <span class="event-month">MAR</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Salsa & Tapas</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 20:00 - 23:30</span>
+                            <span><i class="fas fa-chalkboard-teacher"></i> DJ Alex + live percussion</span>
+                        </div>
+                        <p class="event-description">Get your dancing shoes on! Salsa workshop at 8pm, then open floor. Special tapas menu available.</p>
+                        <div class="event-footer">
+                            <span class="event-tag">Dance</span>
+                            <span class="event-tag">Workshop</span>
+                            <a href="#" class="btn-event">More Info <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3: Sunday Roast & Live Acoustic -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="food1.jpg" alt="Sunday Roast" class="event-img">
+                        <div class="event-date-badge">
+                            <span class="event-day">23</span>
+                            <span class="event-month">MAR</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Sunday Roast & Acoustic</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 13:00 - 17:00</span>
+                            <span><i class="fas fa-guitar"></i> Mike Watson</span>
+                        </div>
+                        <p class="event-description">Classic Sunday roast with all the trimmings, paired with chilled acoustic vibes. Family friendly.</p>
+                        <div class="event-footer">
+                            <span class="event-tag">Food</span>
+                            <span class="event-tag">Family</span>
+                            <a href="#" class="btn-event">More Info <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 4: Comedy Night -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="joy.jpg" alt="Comedy Night" class="event-img">
+                        <div class="event-date-badge">
+                            <span class="event-day">28</span>
+                            <span class="event-month">MAR</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Comedy Night</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 20:00 - 22:30</span>
+                            <span><i class="fas fa-mask"></i> featuring 4 comics</span>
+                        </div>
+                        <p class="event-description">Laugh out loud with top local comedians. R100 cover includes a welcome drink.</p>
+                        <div class="event-footer">
+                            <span class="event-tag">Comedy</span>
+                            <span class="event-tag">18+</span>
+                            <a href="#" class="btn-event">More Info <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 5: Wine & Cheese Tasting -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="cheese.jpg" alt="Wine Tasting" class="event-img">
+                        <div class="event-date-badge">
+                            <span class="event-day">02</span>
+                            <span class="event-month">APR</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Wine & Cheese Tasting</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 18:30 - 20:30</span>
+                            <span><i class="fas fa-wine-glass-alt"></i> curated by sommelier</span>
+                        </div>
+                        <p class="event-description">Explore five premium wines paired with artisanal cheeses. Limited seats – book ahead.</p>
+                        <div class="event-footer">
+                            <span class="event-tag">Tasting</span>
+                            <span class="event-tag">R250 pp</span>
+                            <a href="#" class="btn-event">More Info <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 6: DJ Friday -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="DJ.jpg" alt="DJ Friday" class="event-img">
+                        <div class="event-date-badge">
+                            <span class="event-day">04</span>
+                            <span class="event-month">APR</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>DJ Friday</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 21:00 - late</span>
+                            <span><i class="fas fa-headphones"></i> DJ Kay C</span>
+                        </div>
+                        <p class="event-description">Kick off the weekend with house and RnB beats. Drink specials until midnight.</p>
+                        <div class="event-footer">
+                            <span class="event-tag">Nightlife</span>
+                            <span class="event-tag">DJ</span>
+                            <a href="#" class="btn-event">More Info <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section (Host Your Private Event) -->
+    <section id="booking" class="booking-section">
+        <div class="booking-bg" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.7) 100%), url('inside.jpg');"></div>
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-header">
+                    <span class="booking-tagline">HOST WITH US</span>
+                    <h2 class="booking-title">Host Your Private Event</h2>
+                    <p class="booking-description">Birthday parties, corporate functions, anniversaries — we'll help you celebrate in style.</p>
+                </div>
+                
+                <!-- Simple inquiry form -->
+                <div class="booking-form">
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" placeholder="Event Date" required>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="" disabled selected>Number of guests</option>
+                                    <option value="1-20">1-20</option>
+                                    <option value="21-40">21-40</option>
+                                    <option value="41-60">41-60</option>
+                                    <option value="61-80">61-80</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <textarea placeholder="Tell us about your event (optional)" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Inquiry</button>
+                    </form>
+                    <p class="form-note">We'll get back to you within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('joy.jpg');"></div>
+        </div>
+        <div class="container">
+            <h2 class="cta-title">Don't Miss Out</h2>
+            <p class="cta-text">Book your spot for upcoming events or reserve a table for any occasion.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Book a Table</a>
+                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer – matching Moe's main page (no space after @) -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-wrapper">
+                            <div class="logo-image">
+                                <img src="logo.png" alt="Moe's Grill Logo" class="logo-img">
+                            </div>
+                            <div class="logo-text-container">
+                                <span class="logo-main">MOE'S BEDFORDVIEW GRILL</span>
+                                <span class="logo-sub">@THE FAT MERMAID</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        A modern urban grill and bar offering an unforgettable dining experience in Bedfordview.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="Moe's_bedfordview_grill.html">Home</a></li>
+                        <li><a href="Moe's_bedfordview_grill.html#about">Our Story</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="index.html">The Fat Mermaid</a></li>
+                        <li><a href="little_mykonos.html">Little Mykonos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Opening Hours</h3>
+                    <ul class="footer-hours">
+                        <li><span>Monday - Wednesday</span><span>08:00 - 18:00</span></li>
+                        <li><span>Thursday - Saturday</span><span>08:00 - 21:00</span></li>
+                        <li><span>Sunday</span><span>08:00 - 18:00</span></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">4 Jasmine, Bedfordview, Johannesburg</div>
+                        <div class="contact-item">(011) 555-1234</div>
+                        <div class="contact-item">info@moesgrill.co.za</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moe's Bedfordview Grill @ The Fat Mermaid. All rights reserved. | Crafted with care for food lovers</p>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button (same as The Fat Mermaid) -->
+    <a href="https://wa.me/27836087774" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Mobile menu toggle script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
